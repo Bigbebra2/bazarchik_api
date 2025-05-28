@@ -13,6 +13,6 @@ jwt = JWTManager()
 cors = CORS()
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp')
 redis_blocklist = Redis.from_url(
-    "redis://default:cOqJtKeaNnKkxiQctqXYUboJeIXXOixF@redis.railway.internal:6379",
+    "redis://default:cOqJtKeaNnKkxiQctqXYUboJeIXXOixF@yamanote.proxy.rlwy.net:22695",
     decode_responses=True
 )
