@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# VSCode / PyCharm / JetBrains
+.idea/
+.vscode/
+
+# Environment variables
+.env
+.flaskenv
+
+# Migrations (якщо тимчасові або автогенеровані)
+migrations/
+
+# Uploaded files
+uploads/
+
+# Logs and local debug
+*.log
+*.sqlite3
+*.db
+
+# Mac / Linux system files
+.DS_Store
+Thumbs.db
