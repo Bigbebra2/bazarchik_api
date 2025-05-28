@@ -3,8 +3,10 @@ from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 from flask_migrate import Migrate
 import redis
+import pymysql
 
 
+pymysql.install_as_MySQLdb()
 db = SQLAlchemy()
 migrate = Migrate()
 jwt = JWTManager()
