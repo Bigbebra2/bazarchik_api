@@ -2,6 +2,7 @@ from flask import Flask
 from .config import Config
 from .extensions import db, jwt, cors, migrate
 from .routes import register_routes
+import os
 
 
 def create_app():
@@ -22,6 +23,9 @@ def create_app():
             ]
         }
     })
+
+    upload_folder = os.path.join(os.getcwd(), "uploads", "avas")
+    os.makedirs(upload_folder, exist_ok=True)
 
     register_routes(app)
 
